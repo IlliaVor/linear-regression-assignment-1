@@ -38,7 +38,7 @@ If the course site accepts one file, upload `Assignment1_submission_Student.zip`
 
 ## Evaluation details
 
-All models use ordinary least squares. Numerical predictors are standardized during fitting, then full-data coefficients (`w`, `b`) are reported in the original CSV units. For held-out evaluation, the scaler is fitted on training rows only. Each notebook evaluates test/train ratios 0.25, 0.5, and 1.0 with a fixed random seed of 42. The final cell contains the coefficient table, RMS table, and interpretation. Other cells cover the cost surface, polynomial degree, and gradient descent experiments.
+All models use ordinary least squares. Numerical predictors are standardized during fitting, then full-data coefficients (`w`, `b`) are reported in the original CSV units. For held-out evaluation, the scaler is fitted on training rows only. Each notebook evaluates test/train ratios 0.25, 0.5, and 1.0 with a fixed random seed of 42. The final cell contains the coefficient table, RMS table, and interpretation. Other cells cover fitted-data plots, the cost surface, polynomial degree, and gradient descent experiments. Item 2 also compares loop and vectorized gradient calculations.
 
 ## Sources
 
