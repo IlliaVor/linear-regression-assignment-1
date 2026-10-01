@@ -1,6 +1,6 @@
 # Assignment 1 — Linear Regression
 
-Three runnable Jupyter notebooks for SDT 408 Assignment 1. The notebooks reproduce the reference linear-regression workflow and compare fitted coefficients and held-out RMS error across three feature sets and three test/train ratios.
+Three runnable Jupyter notebooks for SDT 408 Assignment 1. They cover data inspection, least-squares fitting, cost visualization, gradient descent experiments, and held-out RMS comparisons across three feature sets and three test/train ratios.
 
 ## Contents
 
@@ -38,7 +38,7 @@ If the course site accepts one file, upload `Assignment1_submission_Student.zip`
 
 ## Evaluation details
 
-All models use ordinary least squares. Each notebook reports full-data coefficients (`w`, `b`) and evaluates test/train ratios 0.25, 0.5, and 1.0 with a fixed random seed of 42. The final notebook cell contains the coefficient table, RMS table, and a short interpretation. It also contains cells for the cost surface, polynomial-degree comparison, and scaled gradient-descent parameter experiments.
+All models use ordinary least squares. Numerical predictors are standardized during fitting, then full-data coefficients (`w`, `b`) are reported in the original CSV units. For held-out evaluation, the scaler is fitted on training rows only. Each notebook evaluates test/train ratios 0.25, 0.5, and 1.0 with a fixed random seed of 42. The final cell contains the coefficient table, RMS table, and interpretation. Other cells cover the cost surface, polynomial degree, and gradient descent experiments.
 
 ## Sources
 
